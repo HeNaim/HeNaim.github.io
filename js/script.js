@@ -20,6 +20,7 @@ function addToList() {
     document.getElementById('ShopingList').appendChild(newItem)
 
     document.getElementById('total').textContent=numOfItems
+    document.getElementById('Input').textContent=""
 
     }
 }
