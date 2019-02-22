@@ -6,6 +6,7 @@ function runCode() {
 
 function addToList() {
     var item = document.getElementById('Input').value
+    document.getElementById('Input').value=""
     if(item != ""){
 	var text = document.createTextNode(item)
     var newItem = document.createElement('li')
@@ -20,7 +21,6 @@ function addToList() {
     document.getElementById('ShopingList').appendChild(newItem)
 
     document.getElementById('total').textContent=numOfItems
-    document.getElementById('Input').textContent=""
 
     }
 }
